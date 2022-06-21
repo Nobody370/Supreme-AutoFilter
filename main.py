@@ -27,11 +27,15 @@ async def search(_, message):
     btn = []
 
     async with Client("client_session", api_id=api_id, api_hash=api_hash, session_string=string_session) as client:
-        for id in MAINCHANNEL_ID:
+        for id in [MAINCHANNEL_ID]:
             async for msg in client.search_messages(int(id), query=query):
-          	  btn.append(
-         	       [InlineKeyboardButton(text=f"{msg.caption if msg.media else msg.text}", url=f"{msg.link}")]
-          	  )
+        	    name = ""
+        	    if msg.document: name = msg.document.file_name
+        	    elif msg.media: name = msg.caption
+        	    else: name = msg.text
+        	    btn.append(
+         	    [InlineKeyboardButton(text=f"{name}", url=f"{msg.link}")]
+          	)
 
     if not btn:
         return
