@@ -1,0 +1,41 @@
+{
+  "name": "AFB",
+  "description": "",
+  "keywords": [
+    "autofilter",
+    "bot"
+  ],
+  "stack": "container",
+  "repository": "",
+  "success_url": "",
+  "env": {
+      "TG_BOT_TOKEN": {
+        "description": "Make a bot from https://t.me/BotFather and enter the token here.",
+        "value": ""
+      },
+       "API_ID": {
+        "description": "Get this value from https://my.telegram.org/apps",
+        "value": "" 
+      },
+       "MAINCHANNEL_ID": {
+        "description": "id of your telegram CHANNEL",
+        "value": ""    
+      },
+       "PSTRING_SESSION": {
+        "description": "Telethon string session",
+        "required": true,
+        "value": ""  
+      },
+       "API_HASH": {
+        "description": "Get this value from https://my.telegram.org/apps",
+        "value": ""
+      }
+  },
+  "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "free"
+      }
+    },
+  "image": "heroku/python"
+}
