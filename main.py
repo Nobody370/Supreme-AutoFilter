@@ -27,7 +27,7 @@ async def search(_, message):
     btn = []
 
     async with Client("client_session", api_id=api_id, api_hash=api_hash, session_string=string_session) as client:
-        for id in [MAINCHANNEL_ID]:
+        for id in MAINCHANNEL_ID:
             async for msg in client.search_messages(int(id), query=query):
         	    name = ""
         	    if msg.document: name = msg.document.file_name
