@@ -18,11 +18,11 @@
         "value": "" 
       },
        "MAINCHANNEL_ID": {
-        "description": "id of your telegram CHANNEL",
+        "description": "id of your telegram CHANNELS separated by comma",
         "value": ""    
       },
        "PSTRING_SESSION": {
-        "description": "Telethon string session",
+        "description": "pyrogram string session",
         "required": true,
         "value": ""  
       },
