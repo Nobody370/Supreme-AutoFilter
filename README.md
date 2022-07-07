@@ -1,6 +1,6 @@
 ## Auto Filter
 
-A simple telegram bot for find files in channels linked
+A simple telegram bot for find files in channels or groups linked
 
 ## Usage
 deploy the bot add it to your group and give it admin permissions and enjoy.
