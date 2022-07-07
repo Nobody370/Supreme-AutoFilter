@@ -17,7 +17,7 @@ TG_BOT_TOKEN - Make a bot from https://t.me/BotFather and enter the token here.
 API_ID - Get this value from https://my.telegram.org/apps
 API_HASH - Get this value from https://my.telegram.org/apps
 PSTRING_SESSION - Pyrogram session string
-MAINCHANNEL_ID - List of channels
+MAINCHANNEL_ID - List of channels separated by comma
 
 ```
 
